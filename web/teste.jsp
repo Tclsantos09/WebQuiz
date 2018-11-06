@@ -15,7 +15,7 @@
     </head>
     <body>
         <h4><a href="home.jsp">Voltar</a></h4>
-        <h1>Web Quiz</h1>
+        <h1 align="center">Web Quiz</h1>
         <%if (request.getParameter("EnviarTeste")!= null) {%>
         
         <% int total=0;
@@ -29,7 +29,7 @@
         %>
         <hr/>
         <h1 style="color: blue">
-            Resultado do teste: <ul><%= resultado%>%</ul>
+            Resultado do teste: <%= resultado%>%
         </h1>
         <hr/>
         <%}%>

@@ -1,0 +1,20 @@
+<style>
+    .footer {
+    background: #ffffff;
+    position: fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:100px;
+}
+</style>
+<h2 align="center" id="rodape">Contato da Equipe no GitHub <img src="imagem/github.png" height="25" width="25"></h2>
+
+<div align="center">
+    <a href="https://github.com/Tclsantos09/WebQuiz" target="_blank">Repositório do Projeto</a> &ensp;
+    <a href="https://github.com/diogoa" target="_blank">Diogo Rodrigues</a>  &ensp;
+    <a href="https://github.com/rukasugarushia" target="_blank">Lucas Martins</a>  &ensp;
+    <a href="https://github.com/Tclsantos09" target="_blank">Thais Lopes</a>  &ensp;
+    <a href="https://github.com/samaraoliveiram" target="_blank">Samara Motta</a>  &ensp;
+</div>
+<hr/>

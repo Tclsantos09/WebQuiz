@@ -13,8 +13,11 @@
     </head>
     <body>
         <h1>Web Quiz</h1>
-        <h2>Home</h2>
+        <h2 align="center">Home</h2>
         Bem Vindo ao WebQuiz!
         <h4><a href="teste.jsp"><button>Realizar Teste</button></a></h4>
     </body>
+    <div class="footer">
+        <%@include file="WEB-INF/footer.jspf" %>
+    </div>
 </html>
