@@ -28,8 +28,8 @@
             double resultado = 100.0 * (((double)(total)) / ((double) (Bd.getTesteRandomico().size())));
         %>
         <hr/>
-        <h1 style="color: blue">
-            Resultado do teste: <%= resultado%>%
+        <h1 style="color: <%= (resultado >= 60) ? "blue" : "red"%>">
+            Resultado do teste: <%= resultado%>
         </h1>
         <hr/>
         <%}%>
