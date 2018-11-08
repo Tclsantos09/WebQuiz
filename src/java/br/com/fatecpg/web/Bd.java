@@ -13,74 +13,76 @@ import java.util.ArrayList;
 public class Bd {
     public static ArrayList<Questions> getTeste(){
         ArrayList<Questions> teste = new ArrayList<>();
-        teste.add(new Questions("1º Ao definir uma classe em um programa orientado a objetos, o programador pode especificar um ou "
-                + "mais construtores, cuja função é:", "garantir que objetos iniciem em um estado consistente", 
-                new String[] {"inicializar os dados da classe", 
-                    "retornar valores para os métodos de outras classes",
-                    "garantir que objetos iniciem em um estado consistente", 
-                    "instanciar atributos da classe"}));
+        teste.add(new Questions("Quando, em uma mesma classe, se definem diversos métodos de mesmo nome, temos:", "sobrecarga", 
+                new String[] {"sobrecarga", 
+                    "sobreposição",
+                    "encapsulamento", 
+                    "herança",
+                    "composição"}));
         
-        teste.add(new Questions("2º Na programação orientada a objetos, há um mecanismo que permite definir modificadores de acesso. "
-                + "Quando se define um atributo de uma classe com o modificador de acesso privado, significa que:", 
-                "o atributo é acessível somente aos métodos da classe", 
-                new String[] {"o acesso à classe é privado", 
-                    "o atributo é acessível a um programa que tenha uma referência a um objeto da classe",
-                    "a classe é abstrata", 
-                    "o atributo é acessível somente aos métodos da classe"}));
+        teste.add(new Questions("Quando se utiliza o conceito de encapsulamento da programação orientada a objetos, enquanto a ______________ define os detalhes internos do componente, a ____________ lista os serviços fornecidos por ele.", 
+                "implementação – interface", 
+                new String[] {"interface - implementação", 
+                    "classe – implementação",
+                    "interface – classe", 
+                    "implementação – interface",
+                    "classe - interface"}));
         
-        teste.add(new Questions("3º A programação orientada a objetos:", "faz uso de conceitos como classe, interfaces e envio de mensagens.", 
-                new String[] {"impossibilita o polimorfismo sem herança (extends em JAVA)", 
-                    "impede a construção de software de difícil manutenção", 
-                    "faz uso de conceitos como classe, interfaces e envio de mensagens", 
-                    "requer que classes sejam estendidas para a reutilização de código"}));
+        teste.add(new Questions("Um dos principais aperfeiçoamentos do modelo orientado a objeto do JAVA é o tratamento de todos os objetos como referências ao invés de valores. Identifique a alternativa que possui o formato de referenciar atributos de objetos em JAVA:", "objeto.atributo", 
+                new String[] {"objeto->atributo", 
+                    "objeto<-atributo", 
+                    "objeto.atributo", 
+                    "atributo.objeto",
+                    "atributo->objeto"}));
         
-        teste.add(new Questions("4º Se você transforma os atributos públicos de uma classe em atributos privados com métodos de acesso "
-                + "públicos (get/set), esses métodos de acesso:", "podem ser usados para assegurar as regras de negócio", 
-                new String[] {"aumentam o desempenho do programa", 
-                    "diminuem o número total de linhas de código do programa",
-                    "são mais fáceis de escrever", 
-                    "podem ser usados para assegurar as regras de negócio"}));
+        teste.add(new Questions("Qual das declarações abaixo fará com que a classe Senha não possa ser estendida (herdada)?", "final class Senha()", 
+                new String[] {"private class Senha()", 
+                    "protected class Senha()",
+                    "final class Senha()", 
+                    "public class Senha()",
+                    "abstract class Senha()"}));
         
-        teste.add(new Questions("5º Em um programa orientado a objetos, verifica-se que a classe X estende a classe Y. Ou seja, pode-se "
-                + "afirmar, pelos preceitos da POO, que:", "a classe X é derivada de Y", 
-                new String[] {"a classe X é superclasse de Y", 
-                    "a classe Y é derivada de X",
-                    "a classe Y é subclasse de X", 
-                    "a classe X é derivada de Y"}));
+        teste.add(new Questions("Analise a definição a seguir: 'public class Clock extends Applet implements Runnable'. A palavra extends é relativa a que conceito no campo da programação Orientada a Objeto?", "Herança", 
+                new String[] {"Polinômio", 
+                    "Herança",
+                    "Polimorfismo", 
+                    "Abstração",
+                    "Encapsulamento"}));
         
-        teste.add(new Questions("6º Em Orientação a Objetos, para que uma subclasse de uma classe possa ter seu próprio comportamento, e "
-                + "mesmo assim compartilhar algumas das funcionalidades da classe pai, deve-se implementar:", "polimorfismo", 
-                new String[] {"abstração", 
-                    "polimorfismo",
-                    "agregação", 
-                    "generalização"}));
+        teste.add(new Questions("Qual das alternativas abaixo é um exemplo de relação superclasse – subclasse, conforme as definições de POO?", "automóvel – motocicleta", 
+                new String[] {"torta de maçã – maçã", 
+                    "automóvel – motocicleta",
+                    "colmeia - abelha", 
+                    "alcateia – lobo",
+                    "alunos - turma"}));
         
-        teste.add(new Questions("7º Assinale a alternativa que apresenta, corretamente, o conceito de programação orientada a objetos que "
-                + "promove a reutilização de software.", "Herança", 
-                new String[] {"Sobrecarga de operadores", 
-                    "Abstração de dados",
-                    "Herança", 
-                    "Polimorfismo"}));
+        teste.add(new Questions("Quais são os três pilares da Orientação a Objetos?", "encapsulamento, herança e polimorfismo", 
+                new String[] {"classe, atributo e método", 
+                    "abstração, sobrecarga, sobreposição",
+                    "encapsulamento, herança e polimorfismo", 
+                    "classe, encapsulamento, sobrecarga",
+                    "método, sobreposição e polimorfismo"}));
         
-        teste.add(new Questions("8º Na orientação a objetos, a alteração do comportamento dos métodos herdados das superclasses para um "
-                + "comportamento mais específico nas subclasses, de forma a se criar um novo método na classe filha que contém a mesma "
-                + "assinatura e o mesmo tipo de retorno, relaciona-se a:", "sobrescrita", 
-                new String[] {"sobrescrita",
-                    "abstração", 
-                    "overloading",
-                    "portabilidade"}));
+        teste.add(new Questions("Para a Orientação a Objetos, ____________ é algo que ele tem, ___________ é algo que ele faz e ____________ é o significado obtido pela combinação de suas variáveis internas.", "atributo, método, estado", 
+                new String[] {"método, atributo, estado",
+                    "estado, método, atributo", 
+                    "estado, atributo, método",
+                    "atributo, método, herança",
+                    "atributo, método, estado"}));
         
-        teste.add(new Questions("9º Quais são os modos de visibilidades existentes em POO?", "público, protegido, privado", 
-                new String[] {"pacote, classe, herança", 
-                    "público, protegido, privado",
-                    "protegido, pacote, privado", 
-                    "abstrata, concreta, público"}));
+        teste.add(new Questions("Polimorfismo significa muitas formas. Em POO, polimorfismo significa que:", "um único nome pode representar um código diferente selecionado por algum mecanismo automático", 
+                new String[] {"precisamos necessariamente de um nome diferente por método para termos um código diferente", 
+                    "um único nome pode receber apenas um parâmetro na sua declaração",
+                    "podemos escrever o método em diversas linguagens", 
+                    "nomes diferentes podem representar um mesmo comportamento",
+                    "um único nome pode representar um código diferente selecionado por algum mecanismo automático"}));
         
-        teste.add(new Questions("10º São linguagens orientadas a objeto:", "Java e PHP", 
-                new String[] {"SQL e C++", 
-                    "Pascal e Java",
-                    "Delphi e Natural", 
-                    "Java e PHP"}));
+        teste.add(new Questions("Os autores Booch, Rumbaugh e Jacobson reuniram suas propostas de representação e criaram o(a):", "Linguagem de Modelagem Unificada", 
+                new String[] {"Análise Estruturada", 
+                    "Projeto Baseado em Objetos",
+                    "Linguagem de Modelagem Unificada", 
+                    "Programação Orientada a Objetos",
+                    "Programação Móvel"}));
         
         return teste;
     }
