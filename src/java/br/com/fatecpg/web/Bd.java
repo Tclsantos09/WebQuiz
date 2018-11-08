@@ -6,12 +6,13 @@
 package br.com.fatecpg.web;
 
 import java.util.ArrayList;
+import java.util.Collections;
 /**
  *
  * @author thais.lopes
  */
 public class Bd {
-    public static ArrayList<Questions> getTeste(){
+    public static ArrayList<Questions> getTesteRandomico(){
         ArrayList<Questions> teste = new ArrayList<>();
         teste.add(new Questions("Quando, em uma mesma classe, se definem diversos métodos de mesmo nome, temos:", "sobrecarga", 
                 new String[] {"sobrecarga", 
@@ -83,7 +84,7 @@ public class Bd {
                     "Linguagem de Modelagem Unificada", 
                     "Programação Orientada a Objetos",
                     "Programação Móvel"}));
-        
+        Collections.shuffle(teste);
         return teste;
     }
     

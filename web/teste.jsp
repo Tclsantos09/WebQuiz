@@ -19,13 +19,13 @@
         <%if (request.getParameter("EnviarTeste")!= null) {%>
         
         <% int total=0;
-            for(Questions q: Bd.getTeste()){
+            for(Questions q: Bd.getTesteRandomico()){
                 String questao = request.getParameter (q.getTitulo());
                 if (questao != null && questao.equals(q.getPerguntas())){
                     total ++;
                 }
             }
-            double resultado = 100.0 * (((double)(total)) / ((double) (Bd.getTeste().size())));
+            double resultado = 100.0 * (((double)(total)) / ((double) (Bd.getTesteRandomico().size())));
         %>
         <hr/>
         <h1 style="color: blue">
@@ -35,7 +35,7 @@
         <%}%>
         <h2>Teste:</h2>
         <form>
-            <%for(Questions q: Bd.getTeste()) {%>
+            <%for(Questions q: Bd.getTesteRandomico()) {%>
                 <h3><%=q.getTitulo()%></h3>
                 <%for(int i=0; i<q.getAlternativas().length; i++) {%>
                     <input type="radio" name="<%=q.getTitulo()%>" value="<%=q.getAlternativas()[i]%>"/>
