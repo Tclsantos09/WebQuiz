@@ -12,12 +12,16 @@
         <title>Home - Web Quiz</title>
     </head>
     <body>
+        <div class="navbar">
+            <%@include file="WEB-INF/jspf/NavBar.jspf" %>
+        </div>
+        <br>
         <h1>Web Quiz</h1>
         <h2 align="center">Home</h2>
         Bem Vindo ao WebQuiz!
         <h4><a href="teste.jsp"><button>Realizar Teste</button></a></h4>
     </body>
     <div class="footer">
-        <%@include file="WEB-INF/footer.jspf" %>
+        <%@include file="WEB-INF/jspf/footer.jspf" %>
     </div>
 </html>

@@ -1,0 +1,26 @@
+<%@ page pageEncoding="UTF-8" %>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container">
+    <a class="navbar-brand" href="#"><h1>Grupo2</h1></a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+            <a class="nav-link" href="#">home</a>
+        </li>
+    </ul>
+     <%        
+        if(session.getValue("usuario") != null || session.getValue("senha") != null){%>
+        <form>
+            <h6 style="color: white"><% out.println("Bem vindo, " + session.getValue("usuario")); %>  </h6> &nbsp &nbsp
+            <button class="btn btn-outline-success" type="submit">Sair</button> 
+        </form>
+        <%} else {%>
+        <form>
+            <input class="form-control mr-sm-2" type="text" placeholder="Usuário" name="user">
+            <input class="form-control mr-sm-2" type="password" placeholder="Senha" name="password">
+            <button class="btn btn-outline-success" type="submit" name='entar'>Entrar</button> &nbsp
+        </form>
+        <%}
+    %>
+    
+  </div>
+</nav>
