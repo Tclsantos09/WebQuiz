@@ -17,7 +17,7 @@
         <form>
             <input class="form-control mr-sm-2" type="text" placeholder="Usuário" name="user">
             <input class="form-control mr-sm-2" type="password" placeholder="Senha" name="password">
-            <button class="btn btn-outline-success" type="submit" name='entar'>Entrar</button> &nbsp
+            <button class="btn btn-outline-success" type="submit" name='entrar'>Entrar</button> &nbsp
         </form>
         <%}
     %>

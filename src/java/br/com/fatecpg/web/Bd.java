@@ -103,15 +103,14 @@ public class Bd {
         return teste;
     }
     
-    private static ArrayList<Usuario> users;
-     
-    public static ArrayList<Usuario> getUsuario(){
-        if(users == null){
-            users = new ArrayList<>();
-            Usuario user = new Usuario("thais", "1234");
-            users.add(user);
-        }
-       return users;
-    }
+    private static ArrayList<Usuario> usuario;
     
+    public static ArrayList<Usuario> getUsuario(){
+        if(usuario == null){
+            usuario = new ArrayList<>();
+            
+         
+        }
+        return usuario;
+    }
 }

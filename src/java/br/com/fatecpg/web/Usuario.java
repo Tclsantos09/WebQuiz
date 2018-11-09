@@ -5,17 +5,19 @@
  */
 package br.com.fatecpg.web;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author thais.lopes
  */
 public class Usuario {
-    String nome;
-    String senha;
+    private String nome;
+    private String username;
     
-    public Usuario(String nome, String senha) {
+    public Usuario(String nome, String username) {
         this.nome = nome;
-        this.senha = senha;
+        this.username = username;
     }
     
     public String getNome() {
@@ -26,11 +28,12 @@ public class Usuario {
         this.nome = nome;
     }
 
-    public String getSenha() {
-        return senha;
+    public String getUsername() {
+        return username;
     }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }   
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
 }
