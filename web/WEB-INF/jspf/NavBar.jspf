@@ -8,7 +8,7 @@
         </li>
     </ul>
      <%        
-        if(session.getValue("usuario") != null || session.getValue("senha") != null){%>
+        if(session.getValue("usuario") != null){%>
         <form>
             <h6 style="color: white"><% out.println("Bem vindo, " + session.getValue("usuario")); %>  </h6> &nbsp &nbsp
             <button class="btn btn-outline-success" type="submit">Sair</button> 
@@ -16,8 +16,12 @@
         <%} else {%>
         <form>
             <input class="form-control mr-sm-2" type="text" placeholder="Usuário" name="user">
+<<<<<<< HEAD
             <input class="form-control mr-sm-2" type="password" placeholder="Senha" name="password">
             <button class="btn btn-outline-success" type="submit" name='entrar'>Entrar</button> &nbsp
+=======
+            <button class="btn btn-outline-success" type="submit" name='entar'>Entrar</button> &nbsp
+>>>>>>> 9c6b174a3495a5c69ea6cf466c76abe334eca3f8
         </form>
         <%}
     %>
