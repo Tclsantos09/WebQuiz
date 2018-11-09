@@ -108,7 +108,7 @@ public class Bd {
     public static ArrayList<Usuario> getUsuario(){
         if(users == null){
             users = new ArrayList<>();
-            Usuario user = new Usuario("thais", "1234");
+            Usuario user = new Usuario("thais");
             users.add(user);
         }
        return users;
