@@ -106,17 +106,9 @@ public class Bd {
     private static ArrayList<Usuario> usuario;
     
     public static ArrayList<Usuario> getUsuario(){
-<<<<<<< HEAD
+        
         if(usuario == null){
             usuario = new ArrayList<>();
-            
-         
-=======
-        if(users == null){
-            users = new ArrayList<>();
-            Usuario user = new Usuario("thais");
-            users.add(user);
->>>>>>> 9c6b174a3495a5c69ea6cf466c76abe334eca3f8
         }
         return usuario;
     }
